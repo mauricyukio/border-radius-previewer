@@ -1,0 +1,114 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    width: 60vw;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 3rem 0 1rem 0;
+    text-align: center;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-field {
+    width: 100px;
+    height: 30px;
+    border-radius: .4rem;
+    padding: 0 1rem;
+}
+
+#topleft {
+    margin-left: -50px;
+}
+
+#topright {
+    margin-right: -50px;
+}
+
+#bottomleft {
+    margin-left: -50px;
+}
+
+#bottomright {
+    margin-right: -50px;
+}
+
+#shape {
+    width: 25vw;
+    height: 30vh;
+    background-color: #222;
+    margin: 20px auto;
+}
+
+#copy-clipboard {
+    display: flex;
+    flex-direction: column;
+}
+
+#copy-text {
+    padding: 1rem;
+    width: 20vw;
+    height: 7vh;
+    background-color: transparent;
+    border: 2px solid #222;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+#copy {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font: inherit;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #222;
+    color: #eee;
+    transition: ease-in-out .3s;
+}
+
+#copy:hover {
+    background-color: #eee;
+    color: #222;
+    transition: ease-in-out .3s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <script defer src="src/script.js"></script>
+    <title>Border-radius Previewer</title>
+</head>
+<body>
+    <div id="container">
+        <div id="display">
+            <h1>Border-Radius Previewer</h1>
+            <p>Change the 4 values (px) in the input-fields in order to change the shape of the box.</p>
+            <div id="top-inputs" class="input-section">
+                <input type="number" id="topleft" class="input-field" value="0"> 
+                <input type="number" id="topright" class="input-field" value="0">
+            </div>
+            <div id="shape"></div>
+            <div id="bottom-inputs" class="input-section">
+                <input type="number" id="bottomleft" class="input-field" value="0"> 
+                <input type="number" id="bottomright" class="input-field" value="0">
+            </div>
+        </div>
+        <div id="copy-clipboard">
+            <input type="text" id="copy-text" placeholder="border-radius: " readonly>
+            <button id="copy" onclick="copyToClipboard()">Copy Resulting Code to Clipboard</button>
+        </div>
+    </div>
+    
+</body>
+</html>
